@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Box, TextField, Typography, Paper, Button, Dialog, DialogTitle, DialogContent, DialogActions, IconButton } from '@mui/material';
+import { Box, TextField, Typography, Paper, Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import SaveIcon from '@mui/icons-material/Save';
 import { FormulaTag } from './FormulaTag';
 import { Suggestions } from './Suggestions';

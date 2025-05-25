@@ -340,7 +340,6 @@ export const Dashboard: React.FC = () => {
             };
         } else {
             // Performance metrics
-            const baseSalary = 175000;
             const vestingPeriod = modelVariables.find(v => v.name === 'Vesting period')?.value || 4;
 
             // Calculate vesting percentages

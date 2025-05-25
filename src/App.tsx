@@ -52,6 +52,7 @@ function App() {
   const activeModel = linkedModels.find(model => model.isActive);
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+
     setActiveTab(newValue);
   };
 

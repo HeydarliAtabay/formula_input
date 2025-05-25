@@ -3,6 +3,9 @@
 # Install dependencies
 npm install
 
+# Install terser explicitly
+npm install terser --save-dev
+
 # Build the project
 npm run build
 
