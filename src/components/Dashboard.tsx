@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, Typography, Paper } from '@mui/material';
+import { Chart as ChartJS, registerables } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement, LineElement, PointElement } from 'chart.js';
 import { useFormulaStore } from '../store/formulaStore';
 import { VariableEditor } from './VariableEditor';
 
-// Register ChartJS components
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement, LineElement, PointElement);
+// Make sure Chart registration is at the top level and complete
+ChartJS.register(...registerables);
 
 export const Dashboard: React.FC = () => {
     const { linkedModels, variableValues } = useFormulaStore();
